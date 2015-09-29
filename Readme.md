@@ -1,9 +1,13 @@
-This project is the exercises I did as
-part of reading through Learn Ruby the 
-Hard Way by Zed A. Shaw.
+#Provide a link in your Readme.md that links to the documentation for the following classes:
 
-This work was done as a homework assignment
-for the [Davinci Coders](http://www.davincicoders.com/)
-class that I'm taking, titled "Building
-the Toolbelt of a Junior Ruby on Rails 
-Developer" taught by [Jason Noble](http://jasonnoble.org).
+*  Array
+>
+
+*  Hash
+>
+
+*  Chronic (Rubygem)
+>
+
+#Find two other relative ruby documentation links and add those to the Readme.md as well.
+
