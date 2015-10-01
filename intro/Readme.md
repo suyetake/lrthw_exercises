@@ -13,3 +13,4 @@
 *Why is Practice and Persistence important?
 >Practice and Persistance is important because it adds the ingredient of time and experience. When results do not match expectations, persistance is needed to discover the correction to make to the code and to the learning taking place.
 
+
