@@ -60,6 +60,101 @@
 
 > I also had to remove a trailing blank line from GEMFILE to avoid a second offense.
 
+> For the six offenses listed above, I changed double quotes to single quotes in five strings that did not have embedded quotes in the string. And I deleted the blank line at the end of the ex1.rb file.
 
-*Please include the Study Drills stuff in your ex1.rb file.
+>[1] guard(main)>
+>22:39:46 - INFO - Run all
+>22:39:46 - INFO - Inspecting Ruby code style of all files
+>Inspecting 2 files
+>..
+>
+>2 files inspected, no offenses detected
+>[1] guard(main)>
+
+
+#Study Drills
+* print one line
+* print another line
+* duplicate a string
+* see that # is a comment character that prevents the line from being executed.
+
+>Topaz-Sue:chapter_1 $ ruby ex1.rb
+>Hello World!
+>Hello Again
+>I like typing this.
+>This is fun.
+>Yay! Printing.
+>I'd much rather you 'not'
+>I "said" do not touch this.
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $ vi ex1.rb
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>puts 'Hello World!'
+>Topaz-Sue:chapter_1 $ cat ex1.rb
+>#puts 'Hello World!'
+>puts 'Hello Again'
+>#puts 'I like typing this.'
+>#puts 'This is fun.'
+>#puts 'Yay! Printing.'
+>#puts "I'd much rather you 'not'"
+>#puts 'I "said" do not touch this.'
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $ ruby ex1.rb
+>Hello Again
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $ vi ex1.rb
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $ cat ex1.rb
+>puts 'Hello World!'
+>puts 'Hello Again'
+>puts 'I like typing this.'
+>puts 'This is fun.'
+>puts 'Yay! Printing.'
+>puts "I'd much rather you 'not'"
+>puts 'I "said" do not touch this.' * 2
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $ ruby ex1.rb
+>Hello World!
+>Hello Again
+>I like typing this.
+>This is fun.
+>Yay! Printing.
+>I'd much rather you 'not'
+>I "said" do not touch this.I "said" do not touch this.
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $
+>
+>Topaz-Sue:chapter_1 $ vi ex1.rb
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $ cat ex1.rb
+>puts 'Hello World!'
+>puts 'Hello Again'
+>puts 'I like typing this.'
+>puts 'This is fun.'
+>puts 'Yay! Printing.'
+>puts "I'd much rather you 'not'"
+>puts 'I "said" do not touch this.' * 2
+>puts 'I "said" do not touch this. ' * 2
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $ ruby ex1.rb
+>Hello World!
+>Hello Again
+>I like typing this.
+>This is fun.
+>Yay! Printing.
+>I'd much rather you 'not'
+>I "said" do not touch this.I "said" do not touch this.
+>I "said" do not touch this. I "said" do not touch this.
+>
+>(104389830_chapter_1_master) Sue Uyetake
+>Topaz-Sue:chapter_1 $
 
