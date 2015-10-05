@@ -26,4 +26,39 @@ puts 'probably division since integers will evaluate to whole numbers instead \
 of decimal values.'
 puts
 
-# So here I begin researching the division code lines..
+# I took the efficient way to discover the problem by writing the floating point
+# program, running it, and comparing its output to the ex3 original code.
+# Then I used irb to play with the numbers and how they evaluate.
+
+# Here is some data from my irb sessions:
+#
+# 2.2.3 :001 > 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
+#  => 7
+# 2.2.3 :002 > 4 %2
+#  => 0
+# 2.2.3 :003 > 1/4
+#  => 0
+# 2.2.3 :004 > 4%2
+#  => 0
+# 2.2.3 :005 > 5 + 4 % 2
+#  => 5
+# 2.2.3 :006 > 3 + 2 + 1 - 5
+#  => 1
+# 2.2.3 :007 >
+
+# Translated into code:
+puts 'Troubleshooting the line of code with division in it.'
+puts
+puts 'The floating point program came up with 6.75 while integer program said 7'
+puts
+puts '3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6 evaluates to:'
+puts "#{3 + 2} \+ 1 \- 5 \+ 0 \- 0 \+ 6"
+puts '= 1 + 6 = 7'
+puts
+puts '3.0 + 2.0 + 1.0 - 5.0 + 4.0 % 2.0 - 1.0 / 4.0 + 6.0 evaluates to:'
+puts '5.0 + 1.0 - 5.0 + 0.0 - 0.25 + 6.0'
+puts '= 1.0 - 0.25 + 6.0 = 6.75'
+puts
+puts "integer run: #{3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6}"
+puts "floating point run: #{3.0 + 2.0 + 1.0 - 5.0 + 4.0 % 2.0\
+ - 1.0 / 4.0 + 6.0}"
