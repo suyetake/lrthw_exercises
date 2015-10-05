@@ -1,15 +1,14 @@
 |symbol | english word | function
 |--- | --- | ---
-|blah | blah | blah
 |+ | plus | addition
 |- | minus | subtraction
 |/ | slash | division
 |* | asterisk | multiplication
 |% | percent | modulus (remainder from division)
-|< | less-than | True or False
-|> | greater-than | True or False
-|<= | less-than-equal | True or False
-|>= | greater-than-equal | True or False
+|< | less-than | compare, then True or False
+|> | greater-than | compare, then True or False
+|<= | less-than-equal | compare, then True or False
+|>= | greater-than-equal | compare, then True or False
 |== | equivalence | compare, then True or False
 |= | assignment, so invalid | errors about expecting end-of-input will occur
 
